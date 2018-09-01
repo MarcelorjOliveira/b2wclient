@@ -1,0 +1,5 @@
+org/b2w/client/controller/PlanetaController.class
+org/b2w/client/repository/PlanetaRepository.class
+org/b2w/client/configuration/MongoConfig.class
+org/b2w/client/ClientApplication.class
+org/b2w/client/Planeta.class
