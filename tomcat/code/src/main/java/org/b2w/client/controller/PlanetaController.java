@@ -37,6 +37,16 @@ public class PlanetaController {
 		return planetaRepository.findById(id);
 	}
 	
+	@RequestMapping(value = "/planeta/nome/{nome}")
+	public Planeta encontraPeloNome(@PathVariable String nome){
+		Planeta planeta = planetaRepository.planetaPeloNome(nome); 
+		if(planeta != null) {
+			return planeta;
+		}
+		return new Planeta();
+	}
+	
+	
 	@RequestMapping(value = "/planeta/{id}/deleta")
 	public String deleta(@PathVariable Long id){
 		Optional<Planeta> planeta = planetaRepository.findById(id);
