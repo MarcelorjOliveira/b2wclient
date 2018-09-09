@@ -20,21 +20,21 @@ public class Planeta {
 		this.terreno = terreno;
 	}
 
-	//@PrimaryKey
+	// @PrimaryKey
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int id;
+	private long id;
 
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 
-	//@Column
+	// @Column
 	private String nome;
 
 	public String getNome() {
@@ -45,7 +45,7 @@ public class Planeta {
 		this.nome = nome;
 	}
 
-	//@Column
+	// @Column
 	private String clima;
 
 	public String getClima() {
@@ -56,7 +56,7 @@ public class Planeta {
 		this.clima = clima;
 	}
 
-	//@Column
+	// @Column
 	private String terreno;
 
 	public String getTerreno() {

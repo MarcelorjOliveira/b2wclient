@@ -1,7 +1,6 @@
 /home/desenvolvedor/b2wClient/tomcat/code/src/main/java/org/b2w/client/ClientApplication.java
 /home/desenvolvedor/b2wClient/tomcat/code/src/main/java/org/b2w/client/Planeta.java
 /home/desenvolvedor/b2wClient/tomcat/code/src/main/java/org/b2w/client/MongoConfig.java
-/home/desenvolvedor/b2wClient/tomcat/code/src/main/java/org/b2w/client/CassandraConfig.java
 /home/desenvolvedor/b2wClient/tomcat/code/src/main/java/org/b2w/client/controller/PlanetaController.java
 /home/desenvolvedor/b2wClient/tomcat/code/src/main/java/org/b2w/client/repository/PlanetaRepository.java
 /home/desenvolvedor/b2wClient/tomcat/code/src/main/java/org/b2w/client/JpaConfig.java
