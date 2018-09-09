@@ -2,12 +2,4 @@ version: '2'
 
 services:
     db:
-        image: mongo:3.2.20
-        ports:
-            - 27017:27017
-        volumes:
-            - "./dados:/data/db"
-        environment:
-            MONGO_INITDB_ROOT_USERNAME: prod
-            MONGO_INITDB_ROOT_PASSWORD: prod
-            MONGO_INITDB_DATABASE: series
+        image: cassandra:3.0

@@ -1,10 +1,16 @@
 package org.b2w.client.repository;
 
-import java.util.List;
-
 import org.b2w.client.Planeta;
-import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.data.repository.CrudRepository;
+/*
+import org.springframework.data.cassandra.repository.CassandraRepository;
 
-public interface PlanetaRepository extends MongoRepository<Planeta, String> {
+public interface PlanetaRepository extends CassandraRepository<Planeta, Integer> {
+
+}
+*/
+
+
+public interface PlanetaRepository extends CrudRepository<Planeta, Long> {
 
 }

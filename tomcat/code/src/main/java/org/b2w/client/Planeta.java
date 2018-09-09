@@ -1,15 +1,40 @@
 package org.b2w.client;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+//import org.springframework.data.cassandra.core.mapping.Column;
+
+//@Table
+@Entity
 public class Planeta {
-	
-	public Planeta() {}
-	
+
+	public Planeta() {
+	}
+
 	public Planeta(String nome, String clima, String terreno) {
 		this.nome = nome;
 		this.clima = clima;
 		this.terreno = terreno;
 	}
 
+	//@PrimaryKey
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private int id;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	//@Column
 	private String nome;
 
 	public String getNome() {
@@ -20,6 +45,7 @@ public class Planeta {
 		this.nome = nome;
 	}
 
+	//@Column
 	private String clima;
 
 	public String getClima() {
@@ -30,6 +56,7 @@ public class Planeta {
 		this.clima = clima;
 	}
 
+	//@Column
 	private String terreno;
 
 	public String getTerreno() {
@@ -39,5 +66,4 @@ public class Planeta {
 	public void setTerreno(String terreno) {
 		this.terreno = terreno;
 	}
-
 }

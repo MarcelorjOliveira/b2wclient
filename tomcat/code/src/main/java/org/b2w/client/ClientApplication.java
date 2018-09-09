@@ -1,18 +1,16 @@
 package org.b2w.client;
 
-import org.b2w.client.repository.PlanetaRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 
-@SpringBootApplication
+@Configuration
+@EnableAutoConfiguration
+@SpringBootApplication	
 @ComponentScan(basePackages = {"org.b2w.client.controller"})
 public class ClientApplication {
-
-	
-	@Autowired
-	private PlanetaRepository repository;
 
 
 	public static void main(String[] args) {
