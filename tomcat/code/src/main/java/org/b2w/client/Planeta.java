@@ -7,19 +7,14 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import javax.net.ssl.HttpsURLConnection;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Transient;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.springframework.data.annotation.Transient;
+import org.springframework.data.cassandra.core.mapping.PrimaryKey;
+import org.springframework.data.cassandra.core.mapping.Table;
 
-//import org.springframework.data.cassandra.core.mapping.Column;
-
-//@Table
-@Entity
+@Table
 public class Planeta {
 
 	public Planeta() {
@@ -31,10 +26,7 @@ public class Planeta {
 		this.terreno = terreno;
 	}
 
-	// @PrimaryKey
-
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@PrimaryKey
 	private long id;
 
 	public long getId() {
@@ -45,7 +37,6 @@ public class Planeta {
 		this.id = id;
 	}
 
-	// @Column
 	private String nome;
 
 	public String getNome() {
@@ -56,7 +47,6 @@ public class Planeta {
 		this.nome = nome;
 	}
 
-	// @Column
 	private String clima;
 
 	public String getClima() {
@@ -67,7 +57,6 @@ public class Planeta {
 		this.clima = clima;
 	}
 
-	// @Column
 	private String terreno;
 
 	public String getTerreno() {

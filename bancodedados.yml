@@ -3,3 +3,5 @@ version: '2'
 services:
     db:
         image: cassandra:3.0
+        ports:
+            - "9042:9042"

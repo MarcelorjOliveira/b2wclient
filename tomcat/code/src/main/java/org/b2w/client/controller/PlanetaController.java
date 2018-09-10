@@ -21,7 +21,6 @@ public class PlanetaController {
 
 	@RequestMapping(value = "/planetaTeste")
 	public Planeta planetas() {
-		// List<Planeta> listaLivros = planetaRepos itory.findAll();
 		Planeta planeta = new Planeta("nome1", "usuario1", "terreno1" );
 		planetaRepository.save(planeta);
 		return planeta;
