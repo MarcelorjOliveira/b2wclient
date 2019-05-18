@@ -1,5 +1,0 @@
-version: '2'
-
-services:
-    db:
-        image: cassandra:3.0

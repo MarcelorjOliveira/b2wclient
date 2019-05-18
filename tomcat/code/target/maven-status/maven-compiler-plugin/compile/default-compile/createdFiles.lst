@@ -1,6 +1,5 @@
 org/b2w/client/MongoConfig.class
-org/b2w/client/repository/PlanetaRepository.class
-org/b2w/client/JpaConfig.class
-org/b2w/client/Planeta.class
 org/b2w/client/controller/PlanetaController.class
+org/b2w/client/repository/PlanetaRepository.class
+org/b2w/client/Planeta.class
 org/b2w/client/ClientApplication.class
