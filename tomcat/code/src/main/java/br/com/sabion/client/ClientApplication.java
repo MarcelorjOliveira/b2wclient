@@ -1,4 +1,4 @@
-package org.b2w.client;
+package br.com.sabion.client;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;

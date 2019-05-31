@@ -1,6 +1,5 @@
-package org.b2w.client.repository;
+package br.com.sabion.client.repository;
 
-import org.b2w.client.Planeta;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 /*
@@ -11,9 +10,8 @@ public interface PlanetaRepository extends CassandraRepository<Planeta, Integer>
 }
 */
 
-public interface PlanetaRepository extends JpaRepository<Planeta, Long> {
-	
-	@Query("SELECT p FROM Planeta p WHERE p.nome = ?1")
-	public Planeta planetaPeloNome(String nome);
+import br.com.sabion.client.model.Bot;
+
+public interface BotRepository extends JpaRepository<Bot, Long> {
 	
 }

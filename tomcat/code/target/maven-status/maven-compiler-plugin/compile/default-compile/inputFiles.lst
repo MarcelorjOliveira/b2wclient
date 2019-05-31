@@ -1,4 +1,4 @@
-/home/marcelo/b2wclientcompose/tomcat/code/src/main/java/org/b2w/client/repository/PlanetaRepository.java
-/home/marcelo/b2wclientcompose/tomcat/code/src/main/java/org/b2w/client/ClientApplication.java
-/home/marcelo/b2wclientcompose/tomcat/code/src/main/java/org/b2w/client/controller/PlanetaController.java
-/home/marcelo/b2wclientcompose/tomcat/code/src/main/java/org/b2w/client/Planeta.java
+/home/marcelo/b2wclientcompose/tomcat/code/src/main/java/br/com/sabion/client/model/Bot.java
+/home/marcelo/b2wclientcompose/tomcat/code/src/main/java/br/com/sabion/client/repository/BotRepository.java
+/home/marcelo/b2wclientcompose/tomcat/code/src/main/java/br/com/sabion/client/controller/BotController.java
+/home/marcelo/b2wclientcompose/tomcat/code/src/main/java/br/com/sabion/client/ClientApplication.java

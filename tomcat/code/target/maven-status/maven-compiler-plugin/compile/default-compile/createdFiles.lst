@@ -1,4 +1,4 @@
-org/b2w/client/controller/PlanetaController.class
-org/b2w/client/repository/PlanetaRepository.class
-org/b2w/client/Planeta.class
-org/b2w/client/ClientApplication.class
+br/com/sabion/client/ClientApplication.class
+br/com/sabion/client/controller/BotController.class
+br/com/sabion/client/repository/BotRepository.class
+br/com/sabion/client/model/Bot.class
