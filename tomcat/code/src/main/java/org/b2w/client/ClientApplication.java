@@ -7,7 +7,6 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @SpringBootApplication	
-@ComponentScan(basePackages = {"org.b2w.client.controller"})
 public class ClientApplication {
 
 
